@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>To-Do Pro</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <header>
+    <h1>To-Do Pro</h1>
+    <button id="toggle-theme">🌙</button>
+  </header>
+
+  <section id="filters">
+    <button data-filter="pendiente">Pendiente</button>
+    <button data-filter="en progreso">En progreso</button>
+    <button data-filter="terminado">Terminado</button>
+  </section>
+
+  <section id="task-list" class="task-container"></section>
+
+  <form id="task-form">
+    <input type="text" id="title" placeholder="Título" required>
+    <textarea id="description" placeholder="Descripción"></textarea>
+    <select id="priority">
+      <option value="baja">Baja</option>
+      <option value="media">Media</option>
+      <option value="alta">Alta</option>
+    </select>
+    <button type="submit">Agregar tarea</button>
+  </form>
+
+  <script src="app.js"></script>
+</body>
+</html>
